@@ -1,15 +1,9 @@
 package io.axoniq.labs.chat.commandmodel;
 
-import io.axoniq.labs.chat.coreapi.CreateRoomCommand;
-import io.axoniq.labs.chat.coreapi.JoinRoomCommand;
-import io.axoniq.labs.chat.coreapi.LeaveRoomCommand;
-import io.axoniq.labs.chat.coreapi.MessagePostedEvent;
-import io.axoniq.labs.chat.coreapi.ParticipantJoinedRoomEvent;
-import io.axoniq.labs.chat.coreapi.ParticipantLeftRoomEvent;
-import io.axoniq.labs.chat.coreapi.PostMessageCommand;
-import io.axoniq.labs.chat.coreapi.RoomCreatedEvent;
+import io.axoniq.labs.chat.coreapi.*;
 import org.axonframework.test.aggregate.AggregateTestFixture;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 class ChatRoomTest {
 
